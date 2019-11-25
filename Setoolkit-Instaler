@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Instalador do Setoolkit"
+sudo apt-get install git python-pip -f -y
+git clone https://github.com/trustedsec/social-engineer-toolkit.git
+sudo mv social-engineer-toolkit /opt
+pip install -r /opt/social-engineer-toolkit/requeriments.txt
+clear
+echo "Programa instalado com Sucesso"
+echo "Para executar digite sudo /opt/social-engineer-toolkit/./setoolkit"
+
+
+
